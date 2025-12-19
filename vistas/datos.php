@@ -16,7 +16,7 @@
     </div>
     <!-- /.content-header -->
 
-    <!-- Main content -->
+   <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
         <div class="row">
@@ -37,7 +37,45 @@
             </div>
           </div>
         </div>
-        
+
+        <div class="col-lg-12">
+          <table id="tbl_productos" class="table table-striped w-100 shadow">
+            <thead>
+              <tr>
+                <th></th>
+                <th>id</th>
+                <th>Caja</th>
+                <th>Detalle</th>
+                <th>Td</th>
+                <th>Cedula o nit</th>
+                <th>Dependencia</th>
+                <th>Area</th>
+                <th>Mes</th>
+                <th>Año</th>
+                <th>Numero de carpeta</th>
+                <th>Ubicacion</th>
+                <th>Info adicional</th>
+                <th>Fecha Actualizacion</th>
+                <th class ="text center">Opciones</th>
+              </tr>
+            </thead>
+            <tbody>              
+            </tbody>
+          </table>
+        </div>
+
+
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
+
+    <script>
+      $(document).ready(function(){
+        var table;
+        table=$('#tbl_productos').DataTable({
+          "language": {
+            "url": "https://cdn.datatables.net/plug-ins/1.11.0/i18n/es_es.json"
+          }
+        });
+      });
+    </script>
