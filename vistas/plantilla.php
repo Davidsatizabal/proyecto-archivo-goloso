@@ -111,7 +111,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script>
         
         function CargarContenido(pagina_php,contenedor){
-            $("." + contenedor).load(pagina_php);
+            $("." + contenedor).load(pagina_php, function(){
+                var $t = $('#tbl_productos');
+                if ($t.length && $.fn.dataTable) {
+                    if ($.fn.dataTable.isDataTable($t)) {
+                        $t.DataTable().destroy();
+                    }
+                    $t.DataTable({
+                        language: {
+                            url: 'https://cdn.datatables.net/plug-ins/1.11.0/i18n/es_es.json'
+                        }
+                    });
+                }
+            });
         }
 
     </script>
