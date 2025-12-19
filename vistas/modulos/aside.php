@@ -32,7 +32,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a style="cursor: pointer;" class="nav-link" onclick="CargarContenido('vistas/productos.php','content-wrapper')">
+                <a style="cursor: pointer;" class="nav-link" onclick="CargarContenido('vistas/datos.php','content-wrapper')">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Datos</p>
                 </a>
