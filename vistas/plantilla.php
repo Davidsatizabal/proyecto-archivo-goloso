@@ -118,6 +118,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         $t.DataTable().destroy();
                     }
                     $t.DataTable({
+                        responsive: true,
+                        pageLength: 10,
                         language: {
                             url: 'https://cdn.datatables.net/plug-ins/1.11.0/i18n/es_es.json'
                         }

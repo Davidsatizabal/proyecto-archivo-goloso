@@ -20,7 +20,7 @@
  <div class="content">
    <div class="container-fluid">
      <div class="row">
-       <div class="col-lg12">
+       <div class="col-lg-12">
          <div class="card card-info">
            <div class="card-header">
              <h3 class="card-title">Criterios de Búsqueda</h3>
@@ -54,7 +54,8 @@
              <th>Año</th>
              <th>Num/carprta</th>
              <th>Ubicacion</th>
-             <th>Info adicional</th>            
+             <th>Info adicional</th>
+             <th>Fecha Actualizacion</th>
              <th class="text center">Opciones</th>
          </tr>
        </thead>
@@ -76,7 +77,7 @@
               <td><?php echo htmlspecialchars($datos->dependencia ?? ""); ?></td>
               <td><?php echo htmlspecialchars($datos->area ?? ""); ?></td>
               <td><?php echo htmlspecialchars($datos->mes ?? ""); ?></td>
-              <td><?php echo htmlspecialchars(($datos->año ?? ($datos->año ?? ""))); ?></td>
+              <td><?php echo htmlspecialchars(($datos->anio ?? ($datos->año ?? ""))); ?></td>
               <td><?php echo htmlspecialchars($datos->numero_carpeta ?? ""); ?></td>
               <td><?php echo htmlspecialchars($datos->ubicacion ?? ""); ?></td>
               <td><?php echo htmlspecialchars($datos->info_adicional ?? ""); ?></td>
